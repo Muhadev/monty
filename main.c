@@ -1,4 +1,5 @@
 #include "monty.h"
+#include <stdio.h>
 pack_t pack = {NULL, NULL, NULL, 0};
 /**
  * main - monty code interpreter

@@ -1,3 +1,4 @@
+#define _GNU_SOURCE
 #ifndef MONTY_H
 #define MONTY_H
 #include <stdio.h>
@@ -57,7 +58,6 @@ void div_opcode(stack_t **stack_head, unsigned int check);
 int file_exec(char *info, stack_t **stack_bus, unsigned int check,
 		FILE *folder);
 void mod_opcode(stack_t **stack_head, unsigned int check);
-int main(int argc, char *argv[]);
 void stack_empty(stack_t *stack_head);
 void mul_opcode(stack_t **stack_head, unsigned int check);
 void nop_opcode(stack_t **stack_head, unsigned int check);
