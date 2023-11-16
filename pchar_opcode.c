@@ -7,7 +7,7 @@
  */
 void pchar_opcode(stack_t **stack_head, unsigned int check)
 {
-	stact_t *num;
+	stack_t *num;
 
 	num = *stack_head;
 	if (!num)

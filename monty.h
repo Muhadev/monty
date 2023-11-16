@@ -53,10 +53,10 @@ typedef struct instruction_s
 } instruction_t;
 void add_opcode(stack_t **stack_head, unsigned int check);
 void node_stack(stack_t **stack_head, int new_value);
-void div_opcode(stact_t **stack_head, unsigned int check);
+void div_opcode(stack_t **stack_head, unsigned int check);
 int file_exec(char *info, stack_t **stack_bus, unsigned int check,
 		FILE *folder);
-void mod_opcode(stact_t **stack_head, unsigned int check);
+void mod_opcode(stack_t **stack_head, unsigned int check);
 int main(int argc, char *argv[]);
 void stack_empty(stack_t *stack_head);
 #endif

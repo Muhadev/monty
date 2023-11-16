@@ -7,7 +7,7 @@
  */
 void div_opcode(stack_t **stack_head, unsigned int check)
 {
-	stact_t *num;
+	stack_t *num;
 	int size = 0, temp;
 
 	num = *stack_head;
