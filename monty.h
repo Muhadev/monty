@@ -23,11 +23,11 @@ typedef struct stack_s
 	struct stack_s *next;
 } stack_t;
 /**
- * struct bus_s - variables -args, file, line content
- * @arg: value
- * @file: pointer to monty file
- * @content: line content
- * @lifi: flag change stack <-> queue
+ * struct pack_s - variables -args, file, line content
+ * @argument: value
+ * @folder: pointer to monty file
+ * @info: line content
+ * @value: flag change stack <-> queue
  * Description: carries values through the program
  */
 typedef struct pack_s
@@ -59,4 +59,21 @@ int file_exec(char *info, stack_t **stack_bus, unsigned int check,
 void mod_opcode(stack_t **stack_head, unsigned int check);
 int main(int argc, char *argv[]);
 void stack_empty(stack_t *stack_head);
+void mul_opcode(stack_t **stack_head, unsigned int check);
+void nop_opcode(stack_t **stack_head, unsigned int check);
+void opcode_swap(stack_t **stack_head, unsigned int check);
+void pall_opcode(stack_t **stack_head, unsigned int check);
+void pchar_opcode(stack_t **stack_head, unsigned int check);
+void pint_opcode(stack_t **stack_head, unsigned int check);
+void pop_opcode(stack_t **stack_head, unsigned int check);
+void pstr_opcode(stack_t **stack_head, unsigned int check);
+void push_opcode(stack_t **stack_head, unsigned int check);
+void queue_add(stack_t **stack_head, int num);
+void queue_opcode(stack_t **stack_head, unsigned int check);
+void rotl_opcode(stack_t **stack_head,
+		__attribute__((unused)) unsigned int check);
+void rotr_opcode(stack_t **stack_head,
+		__attribute__((unused)) unsigned int check);
+void stack_opcode(stack_t **stack_head, unsigned int check);
+void sub_opcode(stack_t **stack_head, unsigned int check);
 #endif
