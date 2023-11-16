@@ -15,7 +15,7 @@ void push_opcode(stack_t **stack_head, unsigned int check)
 			x++;
 		for (; pack.argument[x] != '\0'; x++)
 		{
-			if (pack.argument[x] > 57 || bus.argument[x] < 48)
+			if (pack.argument[x] > 57 || pack.argument[x] < 48)
 				notify = 1;
 		}
 		if (notify == 1)

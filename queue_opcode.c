@@ -9,7 +9,7 @@ void queue_opcode(stack_t **stack_head, unsigned int check)
 {
 	(void)stack_head;
 	(void)check;
-	pack.value = 1
+	pack.value = 1;
 }
 /**
  * queue_add - add node to the tail stack

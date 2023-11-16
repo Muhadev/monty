@@ -12,7 +12,7 @@ void rotl_opcode(stack_t **stack_head, __attribute__((unused))
 
 	if (*stack_head == NULL || (*stack_head)->next == NULL)
 		return;
-	temp = (*stach_head)->next;
+	temp = (*stack_head)->next;
 	temp->prev = NULL;
 	while (post->next != NULL)
 	{

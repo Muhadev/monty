@@ -15,14 +15,14 @@ int file_exec(char *info, stack_t **stack_bus, unsigned int check,
 		{"mul", mul_opcode}, {"nop", nop_opcode}, {"sub", sub_opcode},
 		{"add", add_opcode}, {"pall", pall_opcode}, {"pint", pint_opcode},
 		{"pchar", pchar_opcode}, {"pstr", pstr_opcode}, {"rotl", rotl_opcode},
-		{"rotr", rotr_opcode}, {"stack", stact_opcode}, {"push", push_opcode},
+		{"rotr", rotr_opcode}, {"stack", stack_opcode}, {"push", push_opcode},
 		{"queue", queue_opcode}, {"mod", mod_opcode}, {NULL, NULL}
 	};
 	unsigned int x = 0;
 	char *menu;
 
 	menu = strtok(info, " \n\t");
-	if (menu && menu[0] == '#'
+	if (menu && menu[0] == '#')
 		return (0);
 	pack.argument = strtok(NULL, " \n\t");
 	while (command[x].opcode && menu)

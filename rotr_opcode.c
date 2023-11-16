@@ -13,7 +13,7 @@ void rotr_opcode(stack_t **stack_head, __attribute__((unused))
 	dup = *stack_head;
 	if (*stack_head == NULL || (*stack_head)->next == NULL)
 		return;
-	while (duo->next)
+	while (dup->next)
 	{
 		dup = dup->next;
 	}

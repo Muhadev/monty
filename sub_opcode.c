@@ -8,7 +8,7 @@
 void sub_opcode(stack_t **stack_head, unsigned int check)
 {
 	stack_t *temp;
-	int size, num;
+	int sub, num;
 
 	temp = *stack_head;
 
