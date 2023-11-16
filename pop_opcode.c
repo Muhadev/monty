@@ -5,7 +5,7 @@
  * @check: numbers of line occupied
  * Return: no return
  */
-void pop_opcode(stact_t **stack_head, unsigned int check)
+void pop_opcode(stack_t **stack_head, unsigned int check)
 {
 	stack_t *num;
 

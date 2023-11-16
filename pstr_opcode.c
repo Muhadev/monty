@@ -5,7 +5,7 @@
  * @check: numbers of line occupied
  * Return: no return
  */
-void pstr_opcode(stact_t **stack_head, unsigned int check)
+void pstr_opcode(stack_t **stack_head, unsigned int check)
 {
 	stack_t *num;
 	(void)check;
