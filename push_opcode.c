@@ -20,7 +20,7 @@ void push_opcode(stack_t **stack_head, unsigned int check)
 		}
 		if (notify == 1)
 		{
-			fprintf(stderr, "L%d: can't div, stack too short\n", check);
+			fprintf(stderr, "L%d: usage: push integer\n", check);
 			fclose(pack.folder);
 			free(pack.info);
 			stack_empty(*stack_head);
