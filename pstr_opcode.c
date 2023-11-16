@@ -13,7 +13,7 @@ void pstr_opcode(stack_t **stack_head, unsigned int check)
 	num = *stack_head;
 	while (num)
 	{
-		if (*stack_head == NULL)
+		if (num->n > 127 || num->n <= 0)
 		{
 			break;
 		}
